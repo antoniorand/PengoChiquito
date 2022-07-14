@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Folders and directories
+tiled/
+.sconsign.dblite
