@@ -2,17 +2,12 @@
 #pragma once
 #include <entt/entt.hpp>
 #include "renderSystem.hpp"
+#include "phaseSystem.hpp"
 #include <functional>
 #include <chrono>
 #include <thread>
 
-class SystemManager{
-
-    //Enum class that can be only be used by System Manager
-    //it defines the phases of the game
-
-    enum class Phase{
-        loading,
+enum class Phase{
         menuScreen,
         optionScreen,
         gameplay,
@@ -20,21 +15,19 @@ class SystemManager{
         none
     };  
 
+class SystemManager{
+
+    //Enum class that can be only be used by System Manager
+    //it defines the phases of the game
+
+    
+
     //The current phase used for game logic
     Phase currentPhase;
     
     //is the currentPhase loaded???
     bool loaded = false;
     
-    //maximum components to be loaded per frame
-    unsigned int maxLoadFPS = 100;
-
-    //loaded components
-    unsigned int loadedComponents = 0;
-
-    //file that has the data of the components
-    //of the current phase (before loading)
-    //variable to do
 
     //the frame limit, 60 by default
     unsigned int frameLimit {60};
@@ -62,6 +55,7 @@ class SystemManager{
     //GridSystem gs;
     //Levelsystem ls;
     //AnimationSystem aa;
+    PhaseSystem ps;
 
     /*
         ******************
@@ -97,7 +91,7 @@ class SystemManager{
     */
 
     //loads the components from the menu
-    bool loadMenuComponents(entt::registry&engine);
+    void loadMenuComponents(entt::registry&engine);
 
     public:
     //we will initialize the variables

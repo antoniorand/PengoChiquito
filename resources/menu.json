@@ -1,0 +1,225 @@
+{ "compressionlevel":-1,
+ "height":20,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 7, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 8, 9, 10, 11, 12, 13, 14, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 15, 16, 17, 18, 19, 20, 21, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 22, 23, 24, 25, 26, 27, 28, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 29, 30, 31, 32, 33, 34, 35, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":20,
+         "id":1,
+         "name":"Capa de patrones 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":3,
+         "name":"Entities",
+         "objects":[
+                {
+                 "class":"",
+                 "height":19,
+                 "id":15,
+                 "name":"StartGame",
+                 "properties":[
+                        {
+                         "name":"AnimationComponent",
+                         "propertytype":"AnimationComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "AnimationSize":1,
+                             "NumberOfAnimations":1
+                            }
+                        }, 
+                        {
+                         "name":"LayerComponent",
+                         "propertytype":"LayerComponent",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
+                         "name":"OptionComponent",
+                         "propertytype":"OptionComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "Down":1,
+                             "Focus":true,
+                             "Left":-1,
+                             "Number":0,
+                             "Right":-1,
+                             "Up":1
+                            }
+                        }, 
+                        {
+                         "name":"RenderComponent",
+                         "propertytype":"RenderComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "File":"resources\/startGame.png",
+                             "Height":1,
+                             "PositionX":140,
+                             "PositionY":120,
+                             "Width":1
+                            }
+                        }],
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Start Game",
+                     "wrap":true
+                    },
+                 "visible":true,
+                 "width":85,
+                 "x":140,
+                 "y":120
+                }, 
+                {
+                 "class":"",
+                 "height":60.5,
+                 "id":19,
+                 "name":"TitleScreen",
+                 "properties":[
+                        {
+                         "name":"AnimationComponent",
+                         "propertytype":"AnimationComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "AnimationSize":6,
+                             "AnimationSpeedMilliseconds":500,
+                             "NumberOfAnimations":1,
+                             "Running":true
+                            }
+                        }, 
+                        {
+                         "name":"LayerComponent",
+                         "propertytype":"LayerComponent",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
+                         "name":"RenderComponent",
+                         "propertytype":"RenderComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "File":"resources\/tituloPengo.png",
+                             "Height":64,
+                             "PositionX":120,
+                             "PositionY":36,
+                             "Width":144
+                            }
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":139.25,
+                 "x":120,
+                 "y":36
+                }, 
+                {
+                 "class":"",
+                 "height":19,
+                 "id":23,
+                 "name":"Options",
+                 "properties":[
+                        {
+                         "name":"AnimationComponent",
+                         "propertytype":"AnimationComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "AnimationSize":1,
+                             "NumberOfAnimations":1
+                            }
+                        }, 
+                        {
+                         "name":"LayerComponent",
+                         "propertytype":"LayerComponent",
+                         "type":"int",
+                         "value":2
+                        }, 
+                        {
+                         "name":"OptionComponent",
+                         "propertytype":"OptionComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "Down":0,
+                             "Focus":false,
+                             "Left":-1,
+                             "Number":1,
+                             "Right":-1,
+                             "Up":0
+                            }
+                        }, 
+                        {
+                         "name":"RenderComponent",
+                         "propertytype":"RenderComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "File":"resources\/options.png",
+                             "Height":1,
+                             "PositionX":140,
+                             "PositionY":180,
+                             "Width":1
+                            }
+                        }],
+                 "rotation":0,
+                 "text":
+                    {
+                     "text":"Options",
+                     "wrap":true
+                    },
+                 "visible":true,
+                 "width":85,
+                 "x":140,
+                 "y":180
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":4,
+ "nextobjectid":40,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.9.0",
+ "tileheight":12,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/tiled\/PengoTituloCorto.tsx"
+        }],
+ "tilewidth":20,
+ "type":"map",
+ "version":"1.9",
+ "width":20
+}

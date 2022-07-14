@@ -1,5 +1,5 @@
 ###library list
-libraries = ['sfml-graphics', 'sfml-window' ,'sfml-system']
+libraries = ['sfml-graphics', 'sfml-window' ,'sfml-system','jsoncpp']
 pathToLibraries=['./lib']
 
 ##Reference: https://stackoverflow.com/questions/26342109/scons-build-all-sources-files-in-all-directories

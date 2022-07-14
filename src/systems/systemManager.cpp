@@ -7,8 +7,7 @@ void SystemManager::menuScreenUpdate(entt::registry& engine){
     if(!loaded){
         //load components into RAM
         //to be changed
-        if(loadMenuComponents(engine))
-            loaded = true;
+        loadMenuComponents(engine);
     }
 
     //we update the systems
@@ -29,8 +28,9 @@ void SystemManager::update(entt::registry&engine){
 
 }
 
-bool SystemManager::loadMenuComponents(entt::registry&engine){
-    //EMPTY BABYYYY
+void SystemManager::loadMenuComponents(entt::registry&engine){
+    
+    //When PhaseSystem ends loading the entities, it will return true
+    loaded = ps.update(engine,"resources/menu.json");
 
-    return true;
 }
