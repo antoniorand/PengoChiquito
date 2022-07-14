@@ -49,7 +49,7 @@ class SystemManager{
 
     //Render system, just renders the sprites or graphics
     //It also handles interpolation movement, but nothing very heavy after this
-    RenderSystem rs;
+    RenderSystem rs{frameLimit};
     //SoundSystem ss;
     //InputSystem is;
     //GridSystem gs;

@@ -2,13 +2,14 @@
 
 #include <SFML/Graphics.hpp>
 #include <entt/entt.hpp>
+#include "../components/allComponents.hpp"
 
     class RenderSystem{
 
         sf::RenderWindow window;
 
         public:
-        RenderSystem();
+        RenderSystem(unsigned int frameLimit);
 
         bool update(sf::Time delta,entt::registry& engine);
 

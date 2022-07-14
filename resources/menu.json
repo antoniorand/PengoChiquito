@@ -36,7 +36,7 @@
         {
          "draworder":"topdown",
          "id":3,
-         "name":"Entities",
+         "name":"Components",
          "objects":[
                 {
                  "class":"",
@@ -51,14 +51,11 @@
                          "value":
                             {
                              "AnimationSize":1,
-                             "NumberOfAnimations":1
+                             "AnimationSpeedMilliseconds":0,
+                             "FirstAnimation":0,
+                             "NumberOfAnimations":2,
+                             "Running":false
                             }
-                        }, 
-                        {
-                         "name":"LayerComponent",
-                         "propertytype":"LayerComponent",
-                         "type":"int",
-                         "value":2
                         }, 
                         {
                          "name":"OptionComponent",
@@ -75,16 +72,22 @@
                             }
                         }, 
                         {
+                         "name":"PositionComponent",
+                         "propertytype":"PositionComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "X":140,
+                             "Y":120
+                            }
+                        }, 
+                        {
                          "name":"RenderComponent",
                          "propertytype":"RenderComponent",
                          "type":"class",
                          "value":
                             {
-                             "File":"resources\/startGame.png",
-                             "Height":1,
-                             "PositionX":140,
-                             "PositionY":120,
-                             "Width":1
+                             "file":"..\/tiled\/startGame.png"
                             }
                         }],
                  "rotation":0,
@@ -112,15 +115,10 @@
                             {
                              "AnimationSize":6,
                              "AnimationSpeedMilliseconds":500,
+                             "FirstAnimation":0,
                              "NumberOfAnimations":1,
                              "Running":true
                             }
-                        }, 
-                        {
-                         "name":"LayerComponent",
-                         "propertytype":"LayerComponent",
-                         "type":"int",
-                         "value":2
                         }, 
                         {
                          "name":"RenderComponent",
@@ -128,11 +126,9 @@
                          "type":"class",
                          "value":
                             {
-                             "File":"resources\/tituloPengo.png",
                              "Height":64,
-                             "PositionX":120,
-                             "PositionY":36,
-                             "Width":144
+                             "Width":144,
+                             "file":"..\/tiled\/tituloPengo.png"
                             }
                         }],
                  "rotation":0,
@@ -154,14 +150,10 @@
                          "value":
                             {
                              "AnimationSize":1,
-                             "NumberOfAnimations":1
+                             "FirstAnimation":0,
+                             "NumberOfAnimations":2,
+                             "Running":false
                             }
-                        }, 
-                        {
-                         "name":"LayerComponent",
-                         "propertytype":"LayerComponent",
-                         "type":"int",
-                         "value":2
                         }, 
                         {
                          "name":"OptionComponent",
@@ -178,16 +170,25 @@
                             }
                         }, 
                         {
+                         "name":"PositionComponent",
+                         "propertytype":"PositionComponent",
+                         "type":"class",
+                         "value":
+                            {
+                             "Height":180,
+                             "Weight":180,
+                             "Width":140,
+                             "X":140,
+                             "Y":180
+                            }
+                        }, 
+                        {
                          "name":"RenderComponent",
                          "propertytype":"RenderComponent",
                          "type":"class",
                          "value":
                             {
-                             "File":"resources\/options.png",
-                             "Height":1,
-                             "PositionX":140,
-                             "PositionY":180,
-                             "Width":1
+                             "file":"..\/tiled\/startGame.png"
                             }
                         }],
                  "rotation":0,

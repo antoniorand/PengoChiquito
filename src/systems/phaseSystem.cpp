@@ -61,22 +61,31 @@ void PhaseSystem::parseRender(Json::Value value, entt::registry&engine, const en
 
 }
 
-void PhaseSystem::parseAnimation(Json::Value value, entt::registry&engine){
+void PhaseSystem::parseAnimation(Json::Value value, entt::registry&engine, const entt::entity entityId){
+
+    {
+        AnimationComponent cmp;
+        cmp.animationSize = value["AnimationSize"].asUInt();
+        cmp.animationSpeedMilliseconds = value["AnimationSpeedMilliseconds"].asUInt();
+        cmp.numberOfAnimations = value["NumberOfAnimations"].asUInt();
+        cmp.currentAnimation = value["FirstAnimation"].asUInt();
+        cmp.running = value["Running"].asBool();
+        engine.emplace<AnimationComponent>(entityId,cmp);
+    }
+
+}
+
+void PhaseSystem::parsePosition(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
 
-void PhaseSystem::parsePosition(Json::Value value, entt::registry&engine){
+void PhaseSystem::parseOption(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
 
-void PhaseSystem::parseOption(Json::Value value, entt::registry&engine){
-
-
-}
-
-void PhaseSystem::parseLayer(Json::Value value, entt::registry&engine){
+void PhaseSystem::parseLayer(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
@@ -114,16 +123,16 @@ void PhaseSystem::parseEntity(Json::Value entity, entt::registry&engine, const e
                 parseRender(entity[i]["value"],engine, entityId);
             break;
             case (unsigned int)(ComponentType::AnimationComponent) :
-                parseAnimation(entity[i]["value"],engine);
+                parseAnimation(entity[i]["value"],engine, entityId);
             break;
             case (unsigned int)(ComponentType::PositionComponent) :
-                parsePosition(entity[i]["value"],engine);
+                parsePosition(entity[i]["value"],engine, entityId);
             break;
             case (unsigned int)(ComponentType::OptionComponent) :
-                parseOption(entity[i]["value"],engine);
+                parseOption(entity[i]["value"],engine, entityId);
             break;
             case (unsigned int)(ComponentType::LayerComponent) :
-                parseLayer(entity[i]["value"],engine);
+                parseLayer(entity[i]["value"],engine, entityId);
             break;
         
             default:

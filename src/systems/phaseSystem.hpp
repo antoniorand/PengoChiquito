@@ -15,13 +15,13 @@
         std::unordered_map<std::string,sf::Texture> textureResources;
         void parseRender(Json::Value value, entt::registry&engine, const entt::entity entityId);
 
-        void parseAnimation(Json::Value value, entt::registry&engine);
+        void parseAnimation(Json::Value value, entt::registry&engine, const entt::entity entityId);
 
-        void parsePosition(Json::Value value, entt::registry&engine);
+        void parsePosition(Json::Value value, entt::registry&engine, const entt::entity entityId);
 
-        void parseOption(Json::Value value, entt::registry&engine);
+        void parseOption(Json::Value value, entt::registry&engine, const entt::entity entityId);
 
-        void parseLayer(Json::Value value, entt::registry&engine);
+        void parseLayer(Json::Value value, entt::registry&engine, const entt::entity entityId);
 
 
         std::uint32_t LoadedEntities {0};
