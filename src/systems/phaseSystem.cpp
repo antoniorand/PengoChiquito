@@ -2,6 +2,7 @@
 
 bool PhaseSystem::update(entt::registry& engine, std::string file){
 
+    
     bool devolver = false;
     if(!loaded){
         Json::Value root;
@@ -10,11 +11,13 @@ bool PhaseSystem::update(entt::registry& engine, std::string file){
         config_doc >> root;
 
         const Json::Value my_layers = root["layers"];
-        for(unsigned int index = 0; index < my_layers.size(); index++)
-        if( my_layers[index]["name"] ==  "Entities"){
-            entities = my_layers[index]["objects"];
-            loaded = true;
-            break;
+        
+        for(unsigned int index = 0; index < my_layers.size(); index++){
+            if( my_layers[index]["name"] ==  "Entities"){
+                entities = my_layers[index]["objects"];
+                loaded = true;
+                break;
+            }
         }
     }
 

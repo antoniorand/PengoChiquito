@@ -36,7 +36,7 @@
         {
          "draworder":"topdown",
          "id":3,
-         "name":"Components",
+         "name":"Entities",
          "objects":[
                 {
                  "class":"",
@@ -72,21 +72,14 @@
                             }
                         }, 
                         {
-                         "name":"PositionComponent",
-                         "propertytype":"PositionComponent",
-                         "type":"class",
-                         "value":
-                            {
-                             "X":140,
-                             "Y":120
-                            }
-                        }, 
-                        {
                          "name":"RenderComponent",
                          "propertytype":"RenderComponent",
                          "type":"class",
                          "value":
                             {
+                             "File":"resources\/tituloPengo.png",
+                             "PositionX":140,
+                             "PositionY":120,
                              "file":"..\/tiled\/startGame.png"
                             }
                         }],
@@ -126,7 +119,10 @@
                          "type":"class",
                          "value":
                             {
+                             "File":"resources\/tituloPengo.png",
                              "Height":64,
+                             "PositionX":120,
+                             "PositionY":36,
                              "Width":144,
                              "file":"..\/tiled\/tituloPengo.png"
                             }
@@ -170,24 +166,14 @@
                             }
                         }, 
                         {
-                         "name":"PositionComponent",
-                         "propertytype":"PositionComponent",
-                         "type":"class",
-                         "value":
-                            {
-                             "Height":180,
-                             "Weight":180,
-                             "Width":140,
-                             "X":140,
-                             "Y":180
-                            }
-                        }, 
-                        {
                          "name":"RenderComponent",
                          "propertytype":"RenderComponent",
                          "type":"class",
                          "value":
                             {
+                             "File":"resources\/tituloPengo.png",
+                             "PositionX":140,
+                             "PositionY":180,
                              "file":"..\/tiled\/startGame.png"
                             }
                         }],

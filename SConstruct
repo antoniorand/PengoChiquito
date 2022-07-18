@@ -39,10 +39,8 @@ if int(asan):
     env.Replace(CCFLAGS='-O3 -std=c++20 ')
     env.Append(CCFLAGS='-fsanitize=address', LINKFLAGS='-fsanitize=address -fno-omit-frame-pointer')
 
-if(env['PLATFORM'] != 'posix'):
+if(env['PLATFORM'] == 'msys'):
     env.Append(LINKFLAGS='-static -static-libgcc -static-libstdc++')
-
-
 
 app = env.Program(target= 'pengo',source = AllSources('./src', '*.cpp*'),LIBS = libraries, LIBPATH=pathToLibraries )
 #Library(target= 'randysEngine',source = src_files)
