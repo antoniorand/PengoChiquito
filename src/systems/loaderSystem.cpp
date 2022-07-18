@@ -1,6 +1,6 @@
-#include "phaseSystem.hpp"
+#include "loaderSystem.hpp"
 
-bool PhaseSystem::update(entt::registry& engine, std::string file){
+bool LoaderSystem::update(entt::registry& engine, std::string file){
 
     
     bool devolver = false;
@@ -38,7 +38,7 @@ bool PhaseSystem::update(entt::registry& engine, std::string file){
     return devolver;
 }
 
-void PhaseSystem::parseRender(Json::Value value, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parseRender(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
     auto file = value["File"].asString();
 
@@ -64,7 +64,7 @@ void PhaseSystem::parseRender(Json::Value value, entt::registry&engine, const en
 
 }
 
-void PhaseSystem::parseAnimation(Json::Value value, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parseAnimation(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
     {
         AnimationComponent cmp;
@@ -78,23 +78,23 @@ void PhaseSystem::parseAnimation(Json::Value value, entt::registry&engine, const
 
 }
 
-void PhaseSystem::parsePosition(Json::Value value, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parsePosition(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
 
-void PhaseSystem::parseOption(Json::Value value, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parseOption(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
 
-void PhaseSystem::parseLayer(Json::Value value, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parseLayer(Json::Value value, entt::registry&engine, const entt::entity entityId){
 
 
 }
 
 
-void PhaseSystem::parseEntity(Json::Value entity, entt::registry&engine, const entt::entity entityId){
+void LoaderSystem::parseEntity(Json::Value entity, entt::registry&engine, const entt::entity entityId){
 
     enum class ComponentType : unsigned int{
 

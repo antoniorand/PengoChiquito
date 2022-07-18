@@ -2,7 +2,7 @@
 #pragma once
 #include <entt/entt.hpp>
 #include "renderSystem.hpp"
-#include "phaseSystem.hpp"
+#include "loaderSystem.hpp"
 #include <functional>
 #include <chrono>
 #include <thread>
@@ -55,7 +55,7 @@ class SystemManager{
     //GridSystem gs;
     //Levelsystem ls;
     //AnimationSystem aa;
-    PhaseSystem ps;
+    LoaderSystem loaders;
 
     /*
         ******************

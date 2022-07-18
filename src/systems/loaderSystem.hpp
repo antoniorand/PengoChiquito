@@ -10,7 +10,7 @@
 #include <unordered_map>
 #include "../components/allComponents.hpp"
 
-    class PhaseSystem{
+    class LoaderSystem{
 
         std::unordered_map<std::string,sf::Texture> textureResources;
         void parseRender(Json::Value value, entt::registry&engine, const entt::entity entityId);
@@ -33,6 +33,6 @@
         void parseEntity(Json::Value entity, entt::registry&engine, const entt::entity entityID);
 
         public:
-        PhaseSystem() = default;
+        LoaderSystem() = default;
         bool update(entt::registry& engine, std::string file);
     };

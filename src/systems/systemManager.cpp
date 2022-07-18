@@ -31,6 +31,6 @@ void SystemManager::update(entt::registry&engine){
 void SystemManager::loadMenuComponents(entt::registry&engine){
     
     //When PhaseSystem ends loading the entities, it will return true
-    loaded = ps.update(engine,"resources/menu.json");
+    loaded = loaders.update(engine,"resources/menu.json");
 
 }
