@@ -1,6 +1,9 @@
 #Executable
 pengo
 
+#Valgrind file
+valgrindErr.txt
+
 # Prerequisites
 *.d
 

@@ -7,9 +7,9 @@ RenderSystem::RenderSystem(unsigned int frameLimit){
 
 bool RenderSystem::update(sf::Time delta,entt::registry& engine){
     bool devolver = true;
-    sf::Event event;
+    sf::Event event{};
     while (window.pollEvent(event)){
-        if (event.type == sf::Event::Closed || event.key.code == sf::Keyboard::Escape){
+        if (event.type == sf::Event::Closed){
             window.close();
             devolver = false;
         }

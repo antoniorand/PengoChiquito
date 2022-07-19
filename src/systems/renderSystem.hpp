@@ -7,7 +7,7 @@
 
     class RenderSystem{
 
-        sf::RenderWindow window;
+        sf::RenderWindow window{};
 
         public:
         RenderSystem(unsigned int frameLimit);

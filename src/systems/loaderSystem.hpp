@@ -25,10 +25,10 @@
 
 
         std::uint32_t LoadedEntities {0};
-        Json::Value entities;
-        bool loaded;
+        Json::Value entities{};
+        bool loaded {false};
 
-        const std::uint32_t maxEntitiesLoadPerFrame = 100;
+        const std::uint32_t maxEntitiesLoadPerFrame {100};
 
         void parseEntity(Json::Value entity, entt::registry&engine, const entt::entity entityID);
 
