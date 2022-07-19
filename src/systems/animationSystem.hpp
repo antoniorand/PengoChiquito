@@ -8,7 +8,7 @@
     class AnimationSystem{
 
         public:
-        AnimationSystem();
+        AnimationSystem() = default;
 
         void update(sf::Time delta,entt::registry& engine);
 

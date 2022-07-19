@@ -24,7 +24,7 @@ bool RenderSystem::update(sf::Time delta,entt::registry& engine){
     for(auto entity : view){
         auto& renderCMP = view.get<RenderComponent>(entity);
         window.draw(renderCMP.sprite);
-
+    }
     //////
 
     window.display();
