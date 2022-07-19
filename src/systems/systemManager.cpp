@@ -13,6 +13,7 @@ void SystemManager::menuScreenUpdate(entt::registry& engine){
     //we update the systems
     else{
         //update rendersystem, it can return false
+        
         if(!rs.update(deltaTime,engine))
             this->currentPhase = Phase::none;
     }

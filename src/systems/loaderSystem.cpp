@@ -42,7 +42,6 @@ void LoaderSystem::parseRender(Json::Value value, entt::registry&engine, const e
 
     auto file = value["File"].asString();
 
-    std::cout << file << std::endl;
 
     if(textureResources.find(file) == textureResources.end()){
         sf::Texture text;

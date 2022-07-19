@@ -3,6 +3,7 @@
 #include <entt/entt.hpp>
 #include "renderSystem.hpp"
 #include "loaderSystem.hpp"
+#include "animationSystem.hpp"
 #include <functional>
 #include <chrono>
 #include <thread>
@@ -54,7 +55,7 @@ class SystemManager{
     //InputSystem is;
     //GridSystem gs;
     //Levelsystem ls;
-    //AnimationSystem aa;
+    AnimationSystem aa;
     LoaderSystem loaders;
 
     /*
