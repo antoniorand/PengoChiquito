@@ -45,19 +45,6 @@
                  "name":"StartGame",
                  "properties":[
                         {
-                         "name":"AnimationComponent",
-                         "propertytype":"AnimationComponent",
-                         "type":"class",
-                         "value":
-                            {
-                             "AnimationSize":1,
-                             "AnimationSpeedMilliseconds":0,
-                             "FirstAnimation":0,
-                             "NumberOfAnimations":2,
-                             "Running":false
-                            }
-                        }, 
-                        {
                          "name":"OptionComponent",
                          "propertytype":"OptionComponent",
                          "type":"class",
@@ -107,7 +94,7 @@
                          "value":
                             {
                              "AnimationSize":6,
-                             "AnimationSpeedMilliseconds":500,
+                             "AnimationSpeedMilliseconds":300,
                              "FirstAnimation":0,
                              "NumberOfAnimations":1,
                              "Running":true
@@ -123,7 +110,7 @@
                              "Height":64,
                              "PositionX":120,
                              "PositionY":36,
-                             "Width":144,
+                             "Width":152,
                              "file":"..\/tiled\/tituloPengo.png"
                             }
                         }],
@@ -139,18 +126,6 @@
                  "id":23,
                  "name":"Options",
                  "properties":[
-                        {
-                         "name":"AnimationComponent",
-                         "propertytype":"AnimationComponent",
-                         "type":"class",
-                         "value":
-                            {
-                             "AnimationSize":1,
-                             "FirstAnimation":0,
-                             "NumberOfAnimations":2,
-                             "Running":false
-                            }
-                        }, 
                         {
                          "name":"OptionComponent",
                          "propertytype":"OptionComponent",

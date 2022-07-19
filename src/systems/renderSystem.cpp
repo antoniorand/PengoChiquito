@@ -1,7 +1,7 @@
 #include "renderSystem.hpp"
 
 RenderSystem::RenderSystem(unsigned int frameLimit){
-    window.create(sf::VideoMode(400, 240), "SFML works!");
+    window.create(sf::VideoMode(400, 240), "Pengo Chiquito");
     window.setFramerateLimit(frameLimit);
 }
 

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <entt/entt.hpp>
+#include <entt/entity/registry.hpp>
 #include "../components/allComponents.hpp"
 #include <iostream>
 
