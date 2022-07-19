@@ -4,9 +4,13 @@
 #include "renderSystem.hpp"
 #include "loaderSystem.hpp"
 #include "animationSystem.hpp"
+#include "inputSystem.hpp"
 #include <functional>
 #include <chrono>
 #include <thread>
+
+//Enum class that can be only be used by System Manager
+//it defines the phases of the game
 
 enum class Phase{
         menuScreen,
@@ -17,10 +21,6 @@ enum class Phase{
     };  
 
 class SystemManager{
-
-    //Enum class that can be only be used by System Manager
-    //it defines the phases of the game
-
     
 
     //The current phase used for game logic
@@ -29,6 +29,8 @@ class SystemManager{
     //is the currentPhase loaded???
     bool loaded = false;
     
+    //is the game over????
+    bool over = false;
 
     //the frame limit, 60 by default
     unsigned int frameLimit {60};
@@ -52,10 +54,14 @@ class SystemManager{
     //It also handles interpolation movement, but nothing very heavy after this
     RenderSystem rs{frameLimit};
     //SoundSystem ss;
-    //InputSystem is;
+    //Input System will read the data from the keyboard, mouse and other devices
+    InputSystem is;
     //GridSystem gs;
     //Levelsystem ls;
+    //Animation System handles the animation steps over time.
+    //Other systems will manipulate animations in a higher level.
     AnimationSystem aa;
+    //Loads from json files and create entities and components from it's data.
     LoaderSystem loaders;
 
     /*
