@@ -7,6 +7,10 @@
 
     class AnimationSystem{
 
+        unsigned int frameCounterAnimation{0};
+        const unsigned int framesToWait{6};
+        sf::Time accumulatedTime{sf::milliseconds(0)};
+
         public:
         AnimationSystem() = default;
 

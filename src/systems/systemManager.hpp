@@ -4,7 +4,6 @@
 #include "renderSystem.hpp"
 #include "loaderSystem.hpp"
 #include "animationSystem.hpp"
-#include "inputSystem.hpp"
 #include <functional>
 #include <chrono>
 #include <thread>
@@ -51,11 +50,10 @@ class SystemManager{
     */
 
     //Render system, just renders the sprites or graphics
-    //It also handles interpolation movement, but nothing very heavy after this
+    //It also handles interpolation movement, but nothing very heavy after this.
+    //It also has a input reading logic, since I can't separate inputs from SFML window
     RenderSystem rs{frameLimit};
     //SoundSystem ss;
-    //Input System will read the data from the keyboard, mouse and other devices
-    InputSystem is;
     //GridSystem gs;
     //Levelsystem ls;
     //Animation System handles the animation steps over time.

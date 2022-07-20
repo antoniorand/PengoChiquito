@@ -69,7 +69,6 @@ void LoaderSystem::parseAnimation(Json::Value value, entt::registry&engine, cons
         AnimationComponent cmp;
         cmp.animationSize = value["AnimationSize"].asUInt();
         cmp.animationSpeedMilliseconds = value["AnimationSpeedMilliseconds"].asUInt();
-        std::cout << cmp.animationSpeedMilliseconds << std::endl;
         cmp.numberOfAnimations = value["NumberOfAnimations"].asUInt();
         cmp.currentAnimation = value["FirstAnimation"].asUInt();
         cmp.running = value["Running"].asBool();
